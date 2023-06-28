@@ -110,20 +110,19 @@ export default function SecondHeader() {
       <StyledToolbar
         sx={{
           display: { xs: "none", md: "block" },
-          display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
         }}
       >
         <Button
-          sx={{ marginLeft: "4px" }}
+          sx={{ marginLeft: "4px", marginTop: "15px" }}
           variant="contained"
           startIcon={<PhoneCallbackIcon />}
         >
           <Typography>+91-8919818886</Typography>
         </Button>
         <Button
-          sx={{ marginLeft: "4px" }}
+          sx={{ marginLeft: "4px", marginTop: "15px" }}
           variant="contained"
           startIcon={<EmailIcon />}
         >
