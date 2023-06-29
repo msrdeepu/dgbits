@@ -1,5 +1,5 @@
 import React from "react";
-
+// material ui imporrts
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import List from "@mui/material/List";
@@ -9,6 +9,7 @@ import ListItemText from "@mui/material/ListItemText";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 // import ListSubheader from "@mui/material/ListSubheader";
 
+// local components/pages imports
 import PagesBanner from "../components/Layout/PagesBanner";
 import Bookdemocard from "../components/Layout/Bookdemocard";
 
@@ -339,6 +340,106 @@ const Projectmanagement = () => {
               src="https://dgbits.in/images/pmbanner.svg"
               alt=""
             />
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          background:
+            "linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://img.freepik.com/free-vector/flat-design-cms-concept-illustrated_23-2148796510.jpg)",
+          height: "100vh",
+          width: "100%",
+          backgroundSize: "cover",
+          display: { xs: "none", lg: "block" },
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box sx={{ marginTop: "10vh", maxWidth: "55%" }}>
+              <Typography variant="h5" sx={{ color: "white" }}>
+                Project Kick-Off
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                Well begun is half done- Our projects start with kick-off
+                meetings,documentation of your requirements, project scopes,
+                review and approval of project initiation documentation from
+                your side
+              </Typography>
+            </Box>
+            <Box sx={{ marginTop: "10vh", maxWidth: "55%" }}>
+              <Typography variant="h5" sx={{ color: "white" }}>
+                Communication
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                The entire communication related to the project is actively
+                maintained through Email groups. All stakeholders are kept in
+                loop and necessary communication controls are implemented to
+                ensure transparency.
+              </Typography>
+            </Box>
+            <Box sx={{ marginTop: "10vh", maxWidth: "55%" }}>
+              <Typography variant="h5" sx={{ color: "white" }}>
+                Monitoring and Controlling
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                Our resource performance is monitored in context with project
+                scopes. You can request for access of PMS. Our managers avail
+                real-time reports in PMS and stringent control mechanism is
+                applied by the team.
+              </Typography>
+            </Box>
+          </Box>
+          <Box>
+            <Box
+              sx={{ marginTop: "10vh", marginLeft: "10vw", maxWidth: "55%" }}
+            >
+              <Typography variant="h5" sx={{ color: "white" }}>
+                Project Traking
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                We begin by proper task and work allocation, track the
+                development progress using MS-Project and RedMine. You can also
+                review the status of the project through Project Management
+                Software.
+              </Typography>
+            </Box>
+            <Box
+              sx={{ marginTop: "10vh", marginLeft: "10vw", maxWidth: "55%" }}
+            >
+              <Typography variant="h5" sx={{ color: "white" }}>
+                Review Meetings
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                Our internal and client review meetings are conducted at regular
+                intervals. We strongly believe that regular meetings help in
+                progress evaluation and implementing changes that save time and
+                costs.
+              </Typography>
+            </Box>
+            <Box
+              sx={{ marginTop: "10vh", marginLeft: "10vw", maxWidth: "55%" }}
+            >
+              <Typography variant="h5" sx={{ color: "white" }}>
+                Cost
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                We abide by the practice to send WSR emails to all project
+                stakeholders. Weekly and fortnightly meets happen between PMs
+                and DMs. There is a weekly review call between all stakeholders.
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Box>
