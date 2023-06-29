@@ -2,7 +2,7 @@ import React from "react";
 
 // import { Maintitle } from './styledLayout';
 import { Typography } from "@mui/material";
-import Box from "@mui/material";
+// import Box from "@mui/material";
 
 export default function PagesBanner(props) {
   return (

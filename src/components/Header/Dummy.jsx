@@ -40,7 +40,7 @@ export default function Dummy() {
             </Typography>
           </Link>
 
-          <Link to="/why-dgbits">
+          <Link to="/about/why-dgbits">
             <Typography
               padding={5}
               variant="h6"
@@ -149,5 +149,6 @@ export default function Dummy() {
         </StyledToolbar>
       </AppBar>
     </Box>
+    // <div>Hello</div>
   );
 }

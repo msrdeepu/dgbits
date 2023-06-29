@@ -12,7 +12,8 @@ import Avatar from "@mui/material/Avatar";
 import WorkIcon from "@mui/icons-material/Work";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
+import Bookdemocard from "../components/Layout/Bookdemocard";
 
 const Whydgbits = () => {
   return (
@@ -254,6 +255,7 @@ const Whydgbits = () => {
           </Grid>
         </Grid>
       </Box>
+      <Bookdemocard />
     </div>
   );
 };
