@@ -4,11 +4,15 @@ import HeaderOne from "./components/Header/HeaderFirst";
 import SecondHeader from "./components/Header/SecondHeader";
 // import Navbar from "./components/Header/Navbar";
 
+// bootstrap imports
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // pages imports
 import About from "./pages/About";
 import Whydgbits from "./pages/Whydgbits";
 import Ourmethodology from "./pages/Ourmethodology";
 import Projectmanagement from "./pages/Projectmanagement";
+import Matrimonialapp from "./pages/Matrimonialapp";
 
 import Dummy from "./components/Header/Dummy";
 
@@ -34,6 +38,12 @@ function App() {
             exact
             path="/about/project-management"
             element={<Projectmanagement />}
+          />
+
+          <Route
+            exact
+            path="/products/matrimonial-app"
+            element={<Matrimonialapp />}
           />
         </Routes>
       </BrowserRouter>
