@@ -13,6 +13,9 @@ import Whydgbits from "./pages/Whydgbits";
 import Ourmethodology from "./pages/Ourmethodology";
 import Projectmanagement from "./pages/Projectmanagement";
 import Matrimonialapp from "./pages/Matrimonialapp";
+import Realestateapp from "./pages/Realestateapp";
+import Swiftcrm from "./pages/Swiftcrm";
+import Modularcms from "./pages/Modularcms";
 
 import Dummy from "./components/Header/Dummy";
 
@@ -45,6 +48,15 @@ function App() {
             path="/products/matrimonial-app"
             element={<Matrimonialapp />}
           />
+
+          <Route
+            exact
+            path="/products/realestate-app"
+            element={<Realestateapp />}
+          />
+
+          <Route exact path="/products/swift-crm" element={<Swiftcrm />} />
+          <Route exact path="/products/modular-cms" element={<Modularcms />} />
         </Routes>
       </BrowserRouter>
     </Box>
