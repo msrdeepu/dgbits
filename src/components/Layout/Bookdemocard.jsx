@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 // import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 // import SkipNextIcon from "@mui/icons-material/SkipNext";
 
-const Bookdemocard = () => {
+const Bookdemocard = (props) => {
   return (
     <Box
       sx={{
@@ -31,8 +31,7 @@ const Bookdemocard = () => {
               }}
               variant="h4"
             >
-              DGBITS is the best technology partner to createa and deliver your
-              awesome website!
+              {props.maintext}
             </Typography>
             <br />
             <Typography

@@ -12,7 +12,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { Typography } from "@mui/material";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
+// import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -355,7 +355,9 @@ const Swiftcrm = () => {
           </Grid>
         </Grid>
       </Box>
-      <Bookdemocard />
+      <Bookdemocard 
+      maintext="Enquire about CRM's capabilities. Simplify your client relationship management."
+      />
     </div>
   );
 };

@@ -354,7 +354,9 @@ const Modularcms = () => {
           </Grid>
         </Grid>
       </Box>
-      <Bookdemocard />
+      <Bookdemocard 
+      maintext="Are you looking for a CMS with no worries about website security?"
+      />
     </div>
   );
 };

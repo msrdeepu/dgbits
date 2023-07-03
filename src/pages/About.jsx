@@ -300,7 +300,9 @@ const About = () => {
           </Grid>
         </Grid>
       </Box>
-      <Bookdemocard />
+      <Bookdemocard 
+      maintext="DGBITS is the best technology partner to create and deliver your awesome website!"
+      />
     </div>
   );
 };
