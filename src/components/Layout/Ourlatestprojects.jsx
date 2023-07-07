@@ -1,187 +1,284 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+
+// pages or layout imorts
+import PagesBanner from "./PagesBanner";
+
+// import
 
 const ourProjects = [
   {
     id: 1,
-    imgURL: "",
-    title: "",
-    tech: "",
+    imgURL: "https://dgbits.in/images/smr-thumb.png",
+    title: "SLN Developers",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
-    imgURL: "",
-    title: "",
-    tech: "",
+    id: 2,
+    imgURL: "https://dgbits.in/images/smr-thumb.png",
+    title: "Satyabhama Decors & Interiors",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
-    imgURL: "",
-    title: "",
-    tech: "",
+    id: 3,
+    imgURL: "https://dgbits.in/images/smr-thumb.png",
+    title: "Nextbell Technologies",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 4,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "HSDentals",
+    tech: "HTML5, CSS3, Bootstrap 4, Laravel8",
   },
   {
-    id: 1,
+    id: 5,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "IOTO Matics",
+    tech: "HTML5, CSS3, Bootstrap 4, Laravel8",
   },
   {
-    id: 1,
+    id: 6,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Suraksha Developers",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 7,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Dev Global Services",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 8,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "MahaRaju Health Care",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 9,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Global Star Edu",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 10,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "OM Guest House",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 11,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Ruby Infra AP",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
   },
   {
-    id: 1,
+    id: 12,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "SAI Sakthi Video Presentation",
+    tech: "Premier, After Effects, Photoshop",
   },
   {
-    id: 1,
+    id: 13,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Sunrise Matrimony",
+    tech: "Laravel, Mysql, Material-UI, PHP",
   },
   {
-    id: 1,
+    id: 14,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Loyal Links Matrimony",
+    tech: "Laravel, Mysql, Material-UI, PHP",
   },
   {
-    id: 1,
+    id: 15,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Sree Sai Matrimony",
+    tech: "Laravel, Mysql, Material-UI, PHP",
   },
   {
-    id: 1,
+    id: 16,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "LT Supercom India",
+    tech: "PHP, Jquery, Bootstrap 4, HTML5",
   },
   {
-    id: 1,
+    id: 17,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "ARCEDO Responsive Website",
+    tech: "HTML5, CSS3, Jquery, Bootstrap 4, Photoshop",
   },
   {
-    id: 1,
+    id: 18,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "JYOSTAR CMS Website",
+    tech: "PHP, HTML5, Bootstrap 4, Photoshop",
   },
   {
-    id: 1,
+    id: 19,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Sri Guru Matrimony",
+    tech: "Laravel, Mysql, Material-UI, PHP",
   },
   {
-    id: 1,
+    id: 20,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "RR Matrimony Application",
+    tech: "Laravel, Mysql, Material-UI, PHP",
   },
   {
-    id: 1,
+    id: 21,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "Quantum Life University",
+    tech: "PHP, Codignator, HTML5, CSS3, Jquery",
   },
   {
-    id: 1,
+    id: 22,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "SAPARIYA Logo & Website",
+    tech: "HTML5, CSS3, Jquery, Bootstrap 4, Photoshop",
   },
   {
-    id: 1,
+    id: 23,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "iDevice Iphone Repair",
+    tech: "HTML5, CSS3, Bootstrap 4, PHP",
   },
   {
-    id: 1,
+    id: 24,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "MKS Developers Website",
+    tech: "HTML5, CSS3, Bootstrap 4, PHP",
   },
   {
-    id: 1,
+    id: 25,
     imgURL: "",
-    title: "",
-    tech: "",
+    title: "NIDI ASSOCIATES",
+    tech: "PHP, HTML5, CSS3, Bootstrap 4, Jquery",
+  },
+  {
+    id: 26,
+    imgURL: "",
+    title: "Life Research Academy",
+    tech: "Joomla 3.0, PHP, Jquery, Bootstrap 3",
+  },
+  {
+    id: 27,
+    imgURL: "",
+    title: "Life Foundation University",
+    tech: "PHP, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 28,
+    imgURL: "",
+    title: "Veeksha Concept School",
+    tech: "Bootstrap 3, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 29,
+    imgURL: "",
+    title: "Moms Kitchen USA",
+    tech: "PHP, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 30,
+    imgURL: "",
+    title: "Vivekananda Residential",
+    tech: "Bootstrap 3, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 31,
+    imgURL: "",
+    title: "Amma Colours",
+    tech: "HTML5, CSS3, Bootstrap 4, PHP",
+  },
+  {
+    id: 32,
+    imgURL: "",
+    title: "LOT Tracks",
+    tech: "UX, UI, HTML5, CSS3, React",
+  },
+  {
+    id: 33,
+    imgURL: "",
+    title: "Palla Residency",
+    tech: "Bootstrap 3, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 34,
+    imgURL: "",
+    title: "SMR Teleservices",
+    tech: "Bootstrap 3, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 35,
+    imgURL: "",
+    title: "Sree Parivaar",
+    tech: "Bootstrap 3, HTML5, CSS3, Jquery",
+  },
+  {
+    id: 36,
+    imgURL: "",
+    title: "MAASAI Planners & Constructions",
+    tech: "PHP, HTML5, CSS3, Jquery",
   },
 ];
 
-const Ourlatestprojects = () => {
+const Cardlayout = (project) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, margin: "8px" }}>
+      <Box sx={{ display: "none" }}>
+        id={project.id}
+        key={project.id}
+      </Box>
+
       <CardMedia
         component="img"
         alt="green iguana"
         height="290"
-        image="https://dgbits.in/images/sln-thumb.png"
+        image={project.imgURL}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+      <CardContent sx={{ textAlign: "center" }}>
+        <Typography gutterBottom variant="h6" component="div">
+          {project.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {project.tech}
         </Typography>
       </CardContent>
-      <CardActions sx={{ display: "flex", justifyContent: "center" }}>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
+  );
+};
+
+const Ourlatestprojects = () => {
+  return (
+    <>
+      <PagesBanner
+        bgImg="https://png.pngtree.com/background/20210710/original/pngtree-blue-digital-technology-electronic-banner-picture-image_1033187.jpg"
+        mainTitle="DGBITS PROJECTS"
+        subtext="We build visually engaging websites & apps with the user experience and great call to actions that pull the brand voice and style through each element. We focus on your desired outcomes and user actions to drive the process. Everything from copy writing, design, photography, video, email marketing integration, SEO digital strategy and opt-in materials come into play with each website development and design project."
+      />
+      <Typography variant="h5" className="text-center m-4 p-3">
+        See the showcase of our favorite web design projects below :
+      </Typography>
+      <Box className="container">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            flexWrap: "wrap",
+          }}
+        >
+          {ourProjects.map(Cardlayout)}
+        </Box>
+      </Box>
+    </>
   );
 };
 
