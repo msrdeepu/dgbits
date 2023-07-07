@@ -25,6 +25,9 @@ import Emailnewsletter from "./pages/Emailnewsletter";
 import Seosem from "./pages/Seosem";
 import Socialmedia from "./pages/Socialmedia";
 import Smswhatsapp from "./pages/Smswhatsapp";
+import Annualmaintinence from "./pages/Annualmaintinence";
+import Webhosting from "./pages/Webhosting";
+import Careers from "./pages/Careers";
 
 import Dummy from "./components/Header/Dummy";
 
@@ -81,6 +84,11 @@ function App() {
           />
           <Route
             exact
+            path="/digitalmarketing/sms-whatsapp"
+            element={<Smswhatsapp />}
+          />
+          <Route
+            exact
             path="/digitalmarketing/email-newsletter"
             element={<Emailnewsletter />}
           />
@@ -91,12 +99,11 @@ function App() {
             path="/digitalmarketing/social-media"
             element={<Socialmedia />}
           />
+          <Route exact path="/services/amc" element={<Annualmaintinence />} />
 
-          <Route
-            exact
-            path="/digitalmarketing/sms-whatsapp"
-            element={<Smswhatsapp />}
-          />
+          <Route exact path="/services/web-hosting" element={<Webhosting />} />
+
+          <Route exact path="/careers" element={<Careers />} />
         </Routes>
       </BrowserRouter>
     </Box>
@@ -104,3 +111,4 @@ function App() {
 }
 
 export default App;
+ 
