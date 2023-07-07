@@ -29,6 +29,9 @@ import Annualmaintinence from "./pages/Annualmaintinence";
 import Webhosting from "./pages/Webhosting";
 import Careers from "./pages/Careers";
 
+
+import Ourlatestprojects from "./components/Layout/Ourlatestprojects";
+
 import Dummy from "./components/Header/Dummy";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -104,6 +107,12 @@ function App() {
           <Route exact path="/services/web-hosting" element={<Webhosting />} />
 
           <Route exact path="/careers" element={<Careers />} />
+
+          <Route
+            exact
+            path="/our-latest-projects"
+            element={<Ourlatestprojects />}
+          />
         </Routes>
       </BrowserRouter>
     </Box>
