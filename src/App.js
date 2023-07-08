@@ -7,7 +7,11 @@ import SecondHeader from "./components/Header/SecondHeader";
 // bootstrap imports
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// navigation and footer imports
+import Navigation from "./components/Header/Navigation";
+
 // pages imports
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Whydgbits from "./pages/Whydgbits";
 import Ourmethodology from "./pages/Ourmethodology";
@@ -28,11 +32,7 @@ import Smswhatsapp from "./pages/Smswhatsapp";
 import Annualmaintinence from "./pages/Annualmaintinence";
 import Webhosting from "./pages/Webhosting";
 import Careers from "./pages/Careers";
-
-
-import Ourlatestprojects from "./components/Layout/Ourlatestprojects";
-
-import Dummy from "./components/Header/Dummy";
+import Latestprojects from "./pages/Latestprojects";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -42,9 +42,11 @@ function App() {
       <BrowserRouter>
         <HeaderOne />
         <SecondHeader />
-        <Dummy />
+        {/* <Dummy /> */}
+        <Navigation />
         {/* <Navbar /> */}
         <Routes>
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/about/why-dgbits" element={<Whydgbits />} />
           <Route
@@ -111,7 +113,7 @@ function App() {
           <Route
             exact
             path="/our-latest-projects"
-            element={<Ourlatestprojects />}
+            element={<Latestprojects />}
           />
         </Routes>
       </BrowserRouter>
