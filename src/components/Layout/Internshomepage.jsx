@@ -11,7 +11,18 @@ import Grid from "@mui/material/Grid";
 const Internshomepage = () => {
   return (
     <Grid container spacing={2}>
-      <Box></Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          height: "65vh",
+          alignItems: "center",
+          width: "100%",
+
+          flexWrap: "wrap",
+        }}
+      ></Box>
     </Grid>
   );
 };
